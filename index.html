@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon cards</title>
+    <link rel="stylesheet" href="style.css" />
+
+    
+  </head>
+  <header>Pokedex</header>
+  <body>
+      <div class="pokemon-card-container">
+        <div class="input">
+          <input
+            type="text"
+            id="pokeInput"
+            title="Taper un nom de pokemon"
+            value="Poke?"
+            onfocus="this.value='';"
+          />
+          <input
+            type="button"
+            value="Search"
+            id="pokeBtn"
+            title="Search Pokémon"
+          />
+          <div id="pokeWrong">Pokémon</div>
+
+        <div class="pokemon-card">
+
+            <div class="background">
+              <div class="sprite">
+                <img
+                  id="pokeSprite"
+                  src="https://cdn-0.emojis.wiki/emoji-pics/mozilla/question-mark-mozilla.png"
+                  alt="question mark"
+                />
+                <div class="buttons">
+                  <div id="prev"><img 
+                    src="img\arrow_left.svg" 
+                    alt="right arrow"
+                    height="15vh"
+                    width="15vw"
+                    color=#3761a8
+                  /></div>
+                  <div id="next"><img 
+                    src="img\arrow_right.svg" 
+                    alt="right arrow"
+                    height="15vh"
+                    width="15vw" /></div>
+                </div>
+              </div>
+              
+      
+      <div class="content">
+        
+        <div id="pokeName">Pokémon</div>
+        <div id="pokeType">Type</div>
+        <div id="pokeId">ID</div>
+        
+        <div id="hp">HP:</div>
+        <div id="attack">Attack:</div>
+        <div id="defense">Defense:</div>
+        <br />
+        <div id="speed">Speed:</div>
+        <div id="special-atk">Special Atk:</div>
+        <div id="special-def">Special Def:</div>
+        <br />
+        <div id="weight">Weight:</div>
+        <div id="height">Height:</div>
+        </div>
+
+      
+
+            
+      
+      
+       
+          
+       
+        
+          
+        </div>
+        
+          
+        </div>
+      </div>
+
+      
+        
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

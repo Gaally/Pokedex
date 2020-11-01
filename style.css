@@ -1,0 +1,164 @@
+* {
+  margin: auto;
+  padding: auto;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  font-family: Bebas Neue;
+  color: #ffd639;
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 1vh;
+}
+body {
+  background-color: #087e8b;
+  font-family: Arimo;
+}
+.pokemon-card-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: linear-gradient(to right, #e9b75f, #fad61f);
+  width: 21rem;
+  height: 45rem;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px #456990;
+}
+
+.background {
+  text-align: center;
+  background: linear-gradient(to right, #6a5b0e, #504921);
+  height: 13rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-top: 0.8rem;
+  padding-bottom: 1rem;
+}
+
+#pokeSprite {
+  width: 200px;
+  height: 200px;
+}
+
+.content {
+  background: linear-gradient(to right, #f5e593, #fff2af);
+  padding: 35px;
+  font-size: 1rem;
+  color: #007cbe;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#pokeName {
+  text-align: center;
+  font-size: 19px;
+  font-weight: lighter;
+  padding: 10px;
+}
+#spriteName {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 0.1rem 0.5rem;
+  font-weight: lighter;
+}
+
+.input {
+  margin: 0.5rem;
+  grid-row: 3;
+  grid-column: 1 / span 2;
+  position: relative;
+  text-align: center;
+}
+
+#pokeInput,
+#pokeBtn {
+  padding: 0 5px;
+  width: 8rem;
+  height: 1.3rem;
+  background-color: #ffd639;
+  color: #456990;
+  border-radius: 0.5rem;
+  border-color: #007cbe;
+  text-align: center;
+  bottom: 1rem;
+  font-weight: bold;
+  outline: 0;
+}
+
+#pokeBtn:hover {
+  cursor: pointer;
+}
+
+#pokeBtn:active {
+  color: #49beaa;
+}
+
+#pokeWrong {
+  display: none;
+  color: #cc0033;
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+}
+
+.buttons {
+  display: flex;
+  top: 30%;
+  position: relative;
+  justify-content: center;
+}
+
+.buttons :active,
+.btnActive {
+  color: var(--poke-red);
+}
+
+#prev {
+  position: relative;
+  cursor: pointer;
+  right: 5%;
+}
+
+#next {
+  position: relative;
+  cursor: pointer;
+  left: 5%;
+}
+
+#pokeType {
+  background-color: #1e6ab0;
+  padding: 7px;
+  color: white;
+  border-radius: 5px;
+  width: 5rem;
+  display: block;
+  text-align: center;
+  position: relative;
+  top: -9rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .pokemon-card-container {
+    width: 90vw;
+    height: 90vh;
+    padding: 0.2rem;
+  }
+  .content {
+    background: linear-gradient(to right, #f5e593, #fff2af);
+    padding: 50px;
+    font-size: 1.7rem;
+    width: 50vh;
+    height: 50vh;
+  }
+  #pokeInput {
+    font-size: 1.5rem;
+    width: 10rem;
+    height: auto;
+  }
+  #pokeBtn {
+    font-size: 1.5rem;
+    width: 10rem;
+    height: auto;
+  }
+}
