@@ -138,18 +138,19 @@ body {
   top: -9rem;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) and (max-width: 1400px) {
   .pokemon-card-container {
     width: 90vw;
-    height: 90vh;
+    height: 110vh;
     padding: 0.2rem;
+    margin-bottom: 0.8rem;
   }
   .content {
     background: linear-gradient(to right, #f5e593, #fff2af);
     padding: 50px;
-    font-size: 1.7rem;
-    width: 50vh;
-    height: 50vh;
+    font-size: 1.2rem;
+    width: auto;
+    height: auto;
   }
   #pokeInput {
     font-size: 1.5rem;
@@ -160,5 +161,12 @@ body {
     font-size: 1.5rem;
     width: 10rem;
     height: auto;
+  }
+}
+
+@media screen and (min-width: 1401px) {
+  .pokemon-card-container {
+    width: 90vw;
+    height: 80vh;
   }
 }
